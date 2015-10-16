@@ -23,7 +23,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="7e3-4p-Mq1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="111" id="7e3-4p-Mq1" customClass="RecipeCell" customModule="recipez" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7e3-4p-Mq1" id="Iln-nc-VQF">
@@ -78,6 +78,10 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="recipeImg" destination="aY5-xx-ebB" id="Kan-ZQ-4JU"/>
+                                            <outlet property="recipeTitle" destination="kAX-hl-WL3" id="n1O-xN-zkS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
